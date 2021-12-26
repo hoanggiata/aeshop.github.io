@@ -189,12 +189,15 @@ footer p, h2, h3 {
 }
 footer p {
     text-align: justify;
-    margin-left: 120px;
+    margin-left: 55px;
+}
+footer a{
+    color: black;
 }
 .bg-4 {
     background-color: #DDDDDD;
-    margin-top: 5em;
-    height: 250px;
+    margin-top: 50px;
+
 }
 .col-sm-4 {
     float: left;

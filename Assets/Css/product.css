@@ -297,4 +297,10 @@ html,body
 padding: 47px;
 margin-left: 54px;
 }
+footer a{
+    color: black;
+}
+#footer{
+    margin-top: 200px;
+}
 

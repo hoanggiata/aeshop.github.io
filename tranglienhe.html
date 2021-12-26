@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="./index.html">Sản Phẩm <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="./product.html">Sản Phẩm <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#P-Warpper">Giới Thiệu</a>
@@ -81,14 +81,18 @@
                         <form action="" id="form1">
 						<h3>GỬI THÔNG TIN LIÊN HỆ</h3>
                         <label>Họ Tên Khách Hàng</label>
-                        <input maxlength="100" minlength="10" required="" type="text"><br>
+                        <input name="_name" id="_name" maxlength="100" minlength="10" required="" type="text"><br>
+                        <p class="name_er" style="display: none; text-align: left; color: red; font-size: 12px;">*Vui lòng nhập họ tên</p>
                         <label>Địa Chỉ Email</label>
-                        <input pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"required="" type="text" placehoder="Địa chỉ Email">
+                        <input name="_email" id="_email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required="" type="text" placehoder="Địa chỉ Email">
+                        <p class="email_er" style="display: none; text-align: left; color: red; font-size: 12px;">*Vui lòng nhập email</p>
                         <label>Số Điện Thoại</label>
-                        <input pattern="(\+84|0)\d{9,10}" required="" title="Nhập số điện thoại theo địa chỉ của Việt Nam '+84' và tối thiểu 10 - 11 số " type="text">
+                        <input name="_number" id="_number" pattern="(\+84|0)\d{9,10}" required="" title="Nhập số điện thoại theo địa chỉ của Việt Nam '+84' và tối thiểu 10 - 11 số " type="text">
+                        <p class="number_er" style="display: none; text-align: left; color: red; font-size: 12px;">*Vui lòng nhập số điện thoại</p>
                         <label>Nội dung yêu cầu</label>
-                        <input maxlength="1000" minlength="100" required="" type="text" title="nội dung phải nhiều hơn 100 ký tự">
-                        <input type="submit" value="Gửi thông tin" id="submit">
+                        <input name="_note" id="_note" maxlength="1000" minlength="100" required="" type="text" style="height: 150px;" title="nội dung phải nhiều hơn 100 ký tự">
+                        <p class="note_er" style="display: none; text-align: left; color: red; font-size: 12px;">*Vui lòng nhập nội dung</p>
+                        <input class="btn_submit" required="" type="submit" value="Gửi thông tin" id="submit">
                         </form>
                     </div>
                 </div>
@@ -96,16 +100,16 @@
             <div class="column-1 col-md-6 col-sm-6 col-xs-12">
                 <div style="box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px; box-sizing: border-box; margin-bottom: 10px; padding: 20px; line-height: 1.6em; padding: 15px;">
                     <span style="box-sizing: inherit; font-weight: 700; line-height: 2.0em;"><span style="color: black;">&nbsp;LIÊN LẠC</span></span><br />
-                    <p>Hotline: 0123456789</p>
-                    <p>Địa chỉ: 828 Sư Vạn Hạnh, P13, Q10, TP.HCM</p>
-                    <p>Email: anhemshop@gmail.com</p>
-                    <p>Lê Hoàng Khánh Duy - 20DH110313</p>
-                    <p>Từ La Thanh Hoàng - 20DH110547</p>
-                    <p>Tạ Hoàng Gia - 20DH111970</p>
-                    <p>Từ Quốc Minh - 20DH111512</p>
-                    <p>Mua hàng siêu tốc</p>
-                    <p>Chính sách bảo mật</p>
-                    <p>Chính sách thanh toán</p>
+                    <p>1. Hotline: 0123456789</p>
+                    <p>2. Địa chỉ: 828 Sư Vạn Hạnh, P13, Q10, TP.HCM</p>
+                    <p>3. Email: anhemshop@gmail.com</p>
+                    <p>4. Lê Hoàng Khánh Duy - 20DH110313</p>
+                    <p>5. Từ La Thanh Hoàng - 20DH110547</p>
+                    <p>6. Tạ Hoàng Gia - 20DH111970</p>
+                    <p>7. Từ Quốc Minh - 20DH111512</p>
+                    <p>8. Mua hàng siêu tốc</p>
+                    <p>9. Chính sách bảo mật</p>
+                    <p>10. Chính sách thanh toán</p>
                     <a href="#">Mục khác</a>  
                 </div>   
             </div>  
@@ -113,23 +117,23 @@
     </div>	
 	<div class="container bg-4 text-center" id="footer">
         <footer>
-            <h2>AEShop</h2>
+            <br>
             <div class="row">
                 <div class="col-sm-4 col-gt">
-                    <h3>GIỚI THIỆU</h3>
+                    <h3 ><i class="fas fa-info-circle"></i> GIỚI THIỆU</h3>
                     <p><i class="fas fa-phone-alt"></i></i> Hotline: 0123456789</p>
                     <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: 828 Sư Vạn Hạnh, P13, Q10, TP.HCM</p>
                     <p><i class="far fa-envelope"></i> Email: anhemshop@gmail.com</p>
                 </div>
                 <div class="col-sm-4 col-sp">
-                    <h3>SẢN PHẨM</h3>
+                    <h3><i class="fas fa-box"></i> SẢN PHẨM</h3>
                     <a href="./index.html">Netflix</a></br>
                     <a href="./index.html">Spotify</a></br>
                     <a href="./index.html">Youtube Premium</a></br> 
                     <a href="./index.html">Office 365</a></br> 
                 </div>
                 <div class="col-sm-4 col-tt">
-                    <h3>TIN TỨC</h3>
+                    <h3><i class="far fa-newspaper"></i> TIN TỨC</h3>
                     <a href="#">Giảm giá cực hot</a></br> 
                     <a href="#">Khuyến mãi lên đến 90%</a></br>
                     <a href="./NewsIndex.html">Phim Netflix: ARCANE</a></br> 
@@ -137,10 +141,97 @@
                     <a href="./NewsIndex.html">Phim Netflix: Money Heist</a></br> 
                 </div>
               </div>
+              <br>
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+//this is for name
+        $('#_name').keyup(function(){
+            var mail = $('#_name').val();
+            if(mail == ''){
+                $('.name_er').slideDown(500);
+                return false;
+            }
+            else{
+                $('.name_er').slideUp(500);
+            }
+        });
+        $('.btn_submit').click(function(){
+            var mail = $('#_name').val();
+            if(mail == ''){
+                $('.name_er').slideDown(500);
+                return false;
+            }
+            else{
+                $('.name_er').slideUp(500);
+            }
+        });
+//this is for email
+        $('#_email').keyup(function(){
+            var mail = $('#_email').val();
+            if(mail == ''){
+                $('.email_er').slideDown(500);
+                return false;
+            }
+            else{
+                $('.email_er').slideUp(500);
+            }
+        });
+        $('.btn_submit').click(function(){
+            var mail = $('#_email').val();
+            if(mail == ''){
+                $('.email_er').slideDown(500);
+                return false;
+            }
+            else{
+                $('.email_er').slideUp(500);
+            }
+        });
+//this is for number
+        $('#_number').keyup(function(){
+            var mail = $('#_number').val();
+            if(mail == ''){
+                $('.number_er').slideDown(500);
+                return false;
+            }
+            else{
+                $('.number_er').slideUp(500);
+            }
+        });
+        $('.btn_submit').click(function(){
+            var mail = $('#_number').val();
+            if(mail == ''){
+                $('.number_er').slideDown(500);
+                return false;
+            }
+            else{
+                $('.number_er').slideUp(500);
+            }
+        });
+//this is for note
+        $('#_note').keyup(function(){
+            var mail = $('#_note').val();
+            if(mail == ''){
+                $('.note_er').slideDown(500);
+                return false;
+            }
+            else{
+                $('.note_er').slideUp(500);
+            }
+        });
+        $('.btn_submit').click(function(){
+            var mail = $('#_note').val();
+            if(mail == ''){
+                $('.note_er').slideDown(500);
+                return false;
+            }
+            else{
+                $('.note_er').slideUp(500);
+            }
+        });
+    </script>
 </body>
 </html>

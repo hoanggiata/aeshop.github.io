@@ -244,6 +244,9 @@ footer p {
     text-align: justify;
     margin-left: 55px;
 }
+footer a{
+    color: black;
+}
 .bg-4 {
     background-color: #DDDDDD;
     margin-top: 50px;

@@ -289,6 +289,7 @@ html {
     height: 100%;
     border: 3px solid black;
     text-align: center;
+    border-radius: 20px;
 }
 .cont #P-Warpper h4
 {
@@ -461,6 +462,11 @@ html {
     border-radius: 3px;
     font-size: 13px;
 }
+.product2 .item-btn a,
+.product1 .item-btn a
+{
+    text-decoration: none;
+}
 .product5 .item-btn p,
 .product4 .item-btn p,
 .product3 .item-btn p,
@@ -484,8 +490,8 @@ html {
 .product5 .item-btn:hover>p,
 .product4 .item-btn:hover>p,
 .product3 .item-btn:hover>p,
-.product2 .item-btn:hover>p,
-.product1 .item-btn:hover>p
+.product2 .item-btn:hover> a p,
+.product1 .item-btn:hover> a p
 {
     background-color: #21beff;
     color: white;
@@ -682,19 +688,28 @@ img, video, picture, canvas {
 }
 footer p, h2, h3 {
     color: black;
+    
+}
+#footer
+{
+    margin-top: 0 ;
 }
 footer p {
     text-align: justify;
-    margin-left: 120px;
+    margin-left: 55px;
+}
+footer a{
+    color: black;
 }
 .bg-4 {
     background-color: #DDDDDD;
-    height: 250px;
-    /* margin-top: 310px; */
+    margin-top: 50px;
+
 }
 .col-sm-4 {
     float: left;
     width: 33.33%;
+    
 }
 
 

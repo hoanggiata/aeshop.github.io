@@ -199,5 +199,8 @@ footer p {
     margin-right: auto;
     padding: 0 !important;
 }
+footer a{
+    color: black;
+}
 
 

@@ -281,7 +281,7 @@ html,body
     height: 15em;
 }
 footer p, h2, h3 {
-    color: black;  
+    color: black;
 }
 footer p {
     text-align: justify;
@@ -289,7 +289,7 @@ footer p {
 }
 .bg-4 {
     background-color: #DDDDDD;
-    height: 250px;
+    height: 250px !important;
 }
 .col-sm-4 {
     float: left;

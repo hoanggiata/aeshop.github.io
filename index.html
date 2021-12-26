@@ -52,7 +52,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="./index.html">Sản Phẩm <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="./product.html">Sản Phẩm <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#P-Warpper">Giới Thiệu</a>
@@ -172,7 +172,7 @@
                 <i class="fas fa-shopping-cart"></i>
             </div>
             <div class="item-btn">
-                <p>Mua Ngay</p>
+                <a href="./sanpham1.html"><p>Mua Ngay</p></a>
             </div>
         </div>
         <div class="col-md-6 col-lg-3 col-sm-6 col-xs-6 product product2" >
@@ -189,7 +189,7 @@
                 <i class="fas fa-shopping-cart"></i>
             </div>
             <div class="item-btn">
-                <p>Mua Ngay</p>
+                <a href="./sanpham2.html"><p>Mua Ngay</p></a>
             </div>
         </div>
         <div class="col-md-6 col-lg-3 col-sm-6 col-xs-6 product product3">
@@ -253,7 +253,7 @@
                 <h5>Câu Hỏi Thường Gặp</h5>
                 </div>
                 <div class="qa1 qa">
-                    <div class="ques" onclick="Show1()">
+                    <div class="ques" onclick="Show1()" id="ques_id">
                         <i class="fas fa-question"></i> <span>Tôi có thể sử dụng trên đa thiết bị ?</span>
                     </div>
                     <p class="answer" style="display: none;" id="show-answer">
@@ -262,7 +262,7 @@
                     </p>
                 </div>
                 <div class="qa2 qa">
-                    <div class="ques"  onclick="Show2()">
+                    <div class="ques"  onclick="Show2()" id="ques_id2">
                         <i class="fas fa-question"></i> <span>Tài khoản Netflix tôi mua có chính chủ ? </span>
                     </div>
                     <p class="answer" style="display: none;" id="show-answer2">
@@ -271,7 +271,7 @@
                     </p>
                 </div>
                 <div class="qa3 qa">
-                    <div class="ques" onclick="Show3()">
+                    <div class="ques" onclick="Show3()" id="ques_id3">
                         <i class="fas fa-question"></i> <span>Bao lâu thì tôi nhận được tài khoản Netflix ? </span>
                     </div>
                     <p class="answer" style="display: none;" id="show-answer3">
@@ -280,7 +280,7 @@
                     </p>
                 </div>
                 <div class="qa4 qa">
-                    <div class="ques" onclick="Show4()">
+                    <div class="ques" onclick="Show4()" id="ques_id4">
                         <i class="fas fa-question"></i> <span>Tài khoản Netflix tôi mua có đúng với thời gian theo gói ? </span>
                     </div>
                     <p class="answer" style="display: none;" id="show-answer4">
@@ -315,23 +315,23 @@
 </div>
 <div class="container bg-4 text-center" id="footer">
     <footer>
-        <h2>AEShop</h2>
+        <br>
         <div class="row">
             <div class="col-sm-4 col-gt">
-                <h3>GIỚI THIỆU</h3>
+                <h3 ><i class="fas fa-info-circle"></i> GIỚI THIỆU</h3>
                 <p><i class="fas fa-phone-alt"></i></i> Hotline: 0123456789</p>
                 <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: 828 Sư Vạn Hạnh, P13, Q10, TP.HCM</p>
                 <p><i class="far fa-envelope"></i> Email: anhemshop@gmail.com</p>
             </div>
             <div class="col-sm-4 col-sp">
-                <h3>SẢN PHẨM</h3>
+                <h3><i class="fas fa-box"></i> SẢN PHẨM</h3>
                 <a href="./index.html">Netflix</a></br>
                 <a href="./index.html">Spotify</a></br>
                 <a href="./index.html">Youtube Premium</a></br> 
                 <a href="./index.html">Office 365</a></br> 
             </div>
             <div class="col-sm-4 col-tt">
-                <h3>TIN TỨC</h3>
+                <h3><i class="far fa-newspaper"></i> TIN TỨC</h3>
                 <a href="#">Giảm giá cực hot</a></br> 
                 <a href="#">Khuyến mãi lên đến 90%</a></br>
                 <a href="./NewsIndex.html">Phim Netflix: ARCANE</a></br> 
@@ -339,73 +339,71 @@
                 <a href="./NewsIndex.html">Phim Netflix: Money Heist</a></br> 
             </div>
           </div>
+          <br>
     </footer>
 </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script lang="Javascript">
-        function Show1()
-        {
-            var x = document.getElementById("show-answer");
-            var y = document.getElementById("footer");
-            if(x.style.display === "none")
-            {
-                x.style.display = "block";
-                y.style.marginTop = "77.5px";
-            }
-            else
-            {
-              x.style.display = "none";
-              y.style.marginTop = "0";
-            }
-            
-        }
-        function Show2()
-        {
-            var x = document.getElementById("show-answer2");
-            var y = document.getElementById("footer");
-            if(x.style.display === "none")
-            {
-                x.style.display = "block";
-                y.style.marginTop = "77.5px";
-            }
-            else
-            {
-              x.style.display = "none";
-              y.style.marginTop = "0";
-            }
-        }
-        function Show3()
-        {
-            var x = document.getElementById("show-answer3");
-            var y = document.getElementById("footer");
-            if(x.style.display === "none")
-            {
-                x.style.display = "block";
-                y.style.marginTop = "77.5px";
-            }
-            else
-            {
-              x.style.display = "none";
-              y.style.marginTop = "0";
-            }
-        }
-        function Show4()
-        {
-            var x = document.getElementById("show-answer4");
-            var y = document.getElementById("footer");
-            if(x.style.display === "none")
-            {
-                x.style.display = "block";
-                y.style.marginTop = "77.5px";
-            }
-            else
-            {
-              x.style.display = "none";
-              y.style.marginTop = "0";
-            }
-        }
+    <script>
+        $(document).ready(function() {
+            $('#ques_id').on('click',function() {     
+                var x = document.getElementById("show-answer");         
+                $('#show-answer').toggle(400,function() {
+                    if(x.style.display === "block"){
+                    $('#footer').css("marginTop" , "38.75px");
+                    $('#show-answer2').hide(200);
+                    $('#show-answer3').hide(200);
+                    $('#show-answer4').hide(200);
+                    }
+                    else{
+                    $('#footer').css("marginTop" , "0");
+                    }
+                });
+            });
+            $('#ques_id2').on('click',function() {
+                var x = document.getElementById("show-answer2");     
+                $('#show-answer2').toggle(400,function(){
+                    if(x.style.display === "block"){
+                    $('#footer').css("marginTop" , "38.75px");
+                    $('#show-answer').hide(200);
+                    $('#show-answer3').hide(200);
+                    $('#show-answer4').hide(200);
+                    }
+                    else{
+                    $('#footer').css("marginTop" , "0");
+                    }
+                });
+            });
+            $('#ques_id3').on('click',function() {
+                var x = document.getElementById("show-answer3");   
+                $('#show-answer3').toggle(400,function(){
+                    if(x.style.display === "block"){
+                    $('#footer').css("marginTop" , "38.75px");
+                    $('#show-answer2').hide(200);
+                    $('#show-answer').hide(200);
+                    $('#show-answer4').hide(200);
+                    }
+                    else{
+                    $('#footer').css("marginTop" , "0");
+                    }
+                });
+            });
+            $('#ques_id4').on('click',function() {
+                var x = document.getElementById("show-answer4"); 
+                $('#show-answer4').toggle(400,function(){
+                    if(x.style.display === "block"){
+                    $('#footer').css("marginTop" , "38.75px");
+                    $('#show-answer2').hide(200);
+                    $('#show-answer3').hide(200);
+                    $('#show-answer').hide(200);
+                    }
+                    else{
+                    $('#footer').css("marginTop" , "0");
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
